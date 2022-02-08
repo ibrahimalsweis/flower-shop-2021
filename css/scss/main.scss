@@ -1,0 +1,41 @@
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+@use "./abstracts/functions" as *;
+
+@import "./base/base";
+@import "./base/helpers";
+
+@import "./components/buttons";
+@import "./components/placeholder";
+
+@import "./layout/header";
+@import "./layout/fotter";
+
+// landing
+@import "./pages/landing";
+
+@import "./abstracts/media";
+@import "./pages/home";
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color-alt;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+

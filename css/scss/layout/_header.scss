@@ -1,0 +1,75 @@
+.header {
+  background-color: $section-bg-color;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  box-shadow: 0 2px 20px $color-box-shadow;
+  padding: 12px;
+      z-index: 1222222222222222222;
+
+  .container {
+      @include flex-between;
+
+
+
+    .logo {
+        width: 20%;
+      h2 {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 23px;
+          left: 90px;
+          width: 5px;
+          height: 5px;
+          background-color: $main-color;
+        }
+      }
+    }
+    .nav {
+      @include flex-between;
+      ul {
+        @include flex-between;
+        margin-right: 50px;
+        li {
+          a {
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              width: 0;
+              height: 1px;
+              transition: $main-transition;
+              background-color: $main-color;
+            }
+            &:hover::before {
+              width: 100%;
+              left: 0;
+            }
+          }
+          padding: 0 10px;
+          &:hover a {
+            color: $main-color;
+          }
+        }
+      }
+    }
+
+    .icons {
+      @media (max-width: 1200px) {
+        display: flex;
+      }
+      a {
+        margin: 0 7px;
+        transition: $main-transition;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}

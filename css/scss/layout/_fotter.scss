@@ -1,0 +1,43 @@
+
+
+.footer{
+    background-color: $section-bg-color;
+    margin-top: 30px;
+    .container{
+        padding:50px 0 ;
+        .content{
+
+            @include gird-system(250px,30px);
+            .box{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;
+                h3{
+                    font-size: 25px;
+                }
+                a{
+                    font-size:23px;
+                    margin: 9px 0;
+                    transition: $main-transition;
+                    &:hover{
+                        text-decoration: underline;
+                        color: $main-color;
+                    }
+                }
+                &:last-child{
+                    display: block;
+                    a{
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }   
+    }
+    .Rights{
+        width: 100%;
+        background-color: white;
+        @include flex-center;
+        padding: 30px;
+    }
+}

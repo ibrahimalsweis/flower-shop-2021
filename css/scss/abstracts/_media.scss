@@ -1,0 +1,45 @@
+@media (max-width: 757px) {
+  .header {
+    .container {
+      flex-direction: column;
+      .logo {
+        @include flex-center;
+      }
+      nav {
+        flex-direction: column;
+        ul {
+          margin: 0 !important;
+        }
+        .icons {
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+  .landing {
+    .text {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .main {
+    .aboutUs {
+      padding: 0;
+      .content {
+        height: 100% !important;
+        flex-direction: column;
+        .box {
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+      .contact{
+    form{
+      width: 100%!important;
+    }
+  }
+  }
+}
+

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $main-text-color;
+  
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Harmattan", sans-serif;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-family: "Noto Naskh Arabic", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Tajawal", sans-serif;
+  font-size: $font-size;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.load {
+  filter: blur(5px);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $main-text-color;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
